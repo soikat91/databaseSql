@@ -1,0 +1,1 @@
+SELECT SUM(AVAIL_BALANCE) as Total ,account.CUST_ID, individual.FIRST_NAME,individual.LAST_NAME FROM account JOIN individual ON account.CUST_ID=individual.CUST_ID  WHERE account.CUST_ID='1'
