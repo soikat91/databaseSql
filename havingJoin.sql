@@ -1,0 +1,2 @@
+SELECT account.CUST_ID,account.OPEN_BRANCH_ID,individual.FIRST_NAME,individual.LAST_NAME, 
+SUM(AVAIL_BALANCE)as Total FROM `account` JOIN individual on account.CUST_ID=individual.CUST_ID  GROUP by account.CUST_ID HAVING Total>5000;

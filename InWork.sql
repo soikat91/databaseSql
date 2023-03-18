@@ -1,0 +1,1 @@
+SELECT * FROM `employee` WHERE TITLE IN ('Head Teller','Teller','loan manager')
